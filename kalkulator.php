@@ -44,13 +44,13 @@ if (isset($_POST['submit'])) {
     <title>Kalkulator Mini</title>
     <style>
         body {
+            display: grid;
+            font-family: "Poppins", sans-serif;
+            place-items: center;
+            background: linear-gradient(315deg, #ffffff, #d7e1ec);
+            background-image: url(umi.jpg);
+            background-size: 100%;
             background-color: #D5ED9F;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
             font-family: Arial, sans-serif;
             padding: 20px;
         }
@@ -85,9 +85,6 @@ if (isset($_POST['submit'])) {
             font-size: 18px;
             font-weight: bold;
         }
-        .nav {
-            margin-bottom: 20px;
-        }
         .nav a {
             margin-right: 10px;
             text-decoration: none;
@@ -113,7 +110,7 @@ if (isset($_POST['submit'])) {
 <div class="nav">
         <a href="home.php">Halaman Utama</a>
         <a href="contact.php">Kontak</a>
-        <a href="kalkulator.php">Kalkulator</a>
+        <a href="profile.php">Profile</a>
         <form action="logout.php" method="post" style="display:inline;">
             <button class="logout-button" type="submit">Logout</button>
         </form>

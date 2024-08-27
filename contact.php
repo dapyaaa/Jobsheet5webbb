@@ -17,6 +17,14 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
     <title>Kontak</title>
     <style>
         body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            place-items: center;
+            background: linear-gradient(315deg, #ffffff, #d7e1ec);
+            background-image: url(umi.jpg);
+            background-size: 100%;
             background-color: #D5ED9F;
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -43,10 +51,51 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
         .logout-button:hover {
             background-color: #c82333;
         }
+        
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        *:focus,
+        *:active {
+        outline: none !important;
+        -webkit-tap-highlight-color: transparent;
+        }
+        .instagram-logo {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            border-radius: 12px;
+        }
+
+        .logo-circle {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .logo-camera {
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 5px #000;
+        }
     </style>
 </head>
 <body>
-    <h2>IG : dapyaaa_</h2>
     <div class="nav">
         <a href="home.php">Halaman Utama</a>
         <a href="profile.php">Profil</a>
@@ -55,6 +104,12 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
             <button class="logout-button" type="submit">Logout</button>
         </form>
     </div>
-    <p>Ini adalah halaman kontak.</p>
+    <h3>Instagram</h3>
+    <a href="https://www.instagram.com/dapyaaa_/">
+    <div class="instagram-logo">
+        <div class="logo-circle"></div>
+        <div class="logo-camera"></div>
+    </div>
+    </a>
 </body>
 </html>

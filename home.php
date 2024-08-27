@@ -17,9 +17,20 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
     <title>Home</title>
     <style>
         body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            font-family: "Poppins", sans-serif;
+            place-items: center;
+            background: linear-gradient(315deg, #ffffff, #d7e1ec);
+            background-image: url(umi.jpg);
+            background-size: 100%;
             background-color: #D5ED9F;
             font-family: Arial, sans-serif;
             padding: 20px;
+        }
+        h3 {
+            align-items: center;
         }
         .nav {
             margin-bottom: 20px;
@@ -46,7 +57,6 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
     </style>
 </head>
 <body>
-    <h2>Selamat datang di halaman utama!</h2>
     <div class="nav">
         <a href="profile.php">Profil</a>
         <a href="contact.php">Kontak</a>
@@ -55,6 +65,6 @@ if (!isset($_SESSION['loggedin']) || !$_SESSION['loggedin']) {
             <button class="logout-button" type="submit">Logout</button>
         </form>
     </div>
-    <p>Ini adalah halaman utama sistem.</p>
+    <h3>Welcome to Cihuyyyyy Sites</h3>
 </body>
 </html>

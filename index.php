@@ -7,7 +7,8 @@
     <title>Login</title>
     <style>
         body {
-            background-color: #D5ED9F;
+            background-image: url(umi.jpg);
+            background-size: 100%;
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
